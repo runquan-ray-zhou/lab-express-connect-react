@@ -41,7 +41,7 @@ Your app should also include the following routes:
 
 ### INDEX: GET `/logs`
 
-- Displays a list of `log.title` that are clickable to take the user to `/logs/:index`.
+- Displays a list of `log.title` that are clickable to take the user to `/logs/:id`.
 
 **IMPORTANT**
 
@@ -105,7 +105,7 @@ module.exports = [
 
 Or else your test(s) will not pass
 
-### SHOW: GET `/logs/:index`
+### SHOW: GET `/logs/:id`
 
 - Displays the details of each log
   - captainName
@@ -128,7 +128,7 @@ Or else your test(s) will not pass
   - submit (submit)
 
 
-### Edit: GET `/logs/:index/edit`
+### Edit: GET `/logs/:id/edit`
 
 - Add an edit route
 - Add an edit form that is prefilled with the log to edit
@@ -138,16 +138,16 @@ Or else your test(s) will not pass
 ### INDEX: GET `/logs`
 - Your Index page uses this route to display a list of all logs
 
-### SHOW: GET `/logs/:index`
+### SHOW: GET `/logs/:id`
 - Your Show page uses this route to display details for a single log
 
 ### Create POST `/logs`
 - Your New form uses this route to create a new log
 
-### Update: PUT `/logs/:index`
+### Update: PUT `/logs/:id`
 - Your Update form uses this route to update a log
 
-### Delete: DELETE `/logs/:index`
+### Delete: DELETE `/logs/:id`
 - Your show page provides a button that uses this route to delete a log
 
 
