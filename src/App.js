@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-
-  <div>Captain's Log</div>
-
+    <div className="App">
+    Captain's Log
+    </div>
   )
 }
 
