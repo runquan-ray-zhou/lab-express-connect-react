@@ -28,7 +28,11 @@ console.log(log)
 
 return (
     <article>
-    <h1>{log.title}</h1>
+        <div>
+            <h1>{log.title} - By {log.captainName}</h1>
+            <h4>{log.post}</h4>
+            <p>Days since last crisis: {log.daysSinceLastCrisis}</p>
+        </div>
       <div className="showNavigation">
         <div>
           {" "}
@@ -36,12 +40,12 @@ return (
             <button>Back</button>
           </Link>
         </div>
-        {/* <div>
+        <div>
           {" "}
           <Link to={`/logs/${id}/edit`}>
             <button>Edit</button>
           </Link>
-        </div> */}
+        </div>
         <div>
           {" "}
           <button onClick={handleDelete}>Delete</button>
