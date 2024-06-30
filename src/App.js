@@ -21,9 +21,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/logs" element={<Index />} />
-            {/* <Route path="/logs/new" element={<New />} />
+            {/* <Route path="/logs/new" element={<New />} /> */}
             <Route path="/logs/:id" element={<Show />} />
-            <Route path="/logs/:id/edit" element={<Edit />} />
+             {/*<Route path="/logs/:id/edit" element={<Edit />} />
             <Route path="*" element={<Error />} /> */}
           </Routes>
         </main>

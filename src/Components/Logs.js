@@ -1,18 +1,19 @@
 import { useState, useEffect } from "react";
 import Log from "./Log";
 
-const API = process.env.REACT_APP_API_BASE_URL;
+// const URL = process.env.REACT_APP_API_BASE_URL; This does not work because the logs are not a json file
 
 export default function Logs() {
   const [logs, setLogs] = useState([]);
 
   useEffect(() => {
-    fetch(`${API}/logs`)
-      .then((response) => response.json())
-      .then((responseJSON) => setLogs(responseJSON))
-      .catch((error) => console.error(error));
+    fetch("http://localhost:5555/logs")
+    .then((response) => response.json())
+    .then((responseJSON) => setLogs(responseJSON))
+    .catch((error) => console.error(error));
   }, []);
 
+  console.log(logs)
   return (
     <div className="Logs">
       <section>
