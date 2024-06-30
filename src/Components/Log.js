@@ -4,7 +4,7 @@ export default function Log({ log, id }) {
   return (
     <tr>
       <td>
-        <Link to={`/${id}`}> {log.title}</Link>
+        <Link to={`/logs/${id}`}> {log.title}</Link>
       </td>
     </tr>
   );
