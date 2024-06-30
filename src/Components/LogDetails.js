@@ -15,9 +15,6 @@ export default function LogDetails() {
       });
   }, [id, navigate]);
 
-
-console.log(log)
-
   const handleDelete = () => {
     fetch(`http://localhost:5555/logs/${id}`, { method: "DELETE" })
       .then(() => {
