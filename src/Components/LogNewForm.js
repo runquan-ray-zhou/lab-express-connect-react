@@ -33,6 +33,10 @@ export default function LogNewForm() {
     setLog({ ...log, mistakesWereMadeToday: !log.mistakesWereMadeToday });
   };
 
+  const handleNumberChange = (event) => {
+    setLog({ ...log, [event.target.id]: Number(event.target.value) })
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
     addLog();
@@ -83,7 +87,7 @@ export default function LogNewForm() {
           id="daysSinceLastCrisis"
           value={log.daysSinceLastCrisis}
           type="number"
-          onChange={handleTextChange}
+          onChange={handleNumberChange}
           placeholder="0"
           required
         />
