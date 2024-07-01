@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Pages
-// import Edit from "./Pages/Edit";
+import Edit from "./Pages/Edit";
 // import Error from "./Pages/Error";
 import Home from "./Pages/Home";
 import Index from "./Pages/Index";
@@ -23,8 +23,8 @@ function App() {
             <Route path="/logs" element={<Index />} />
             <Route path="/logs/new" element={<New />} />
             <Route path="/logs/:id" element={<Show />} />
-            {/* <Route path="/logs/:id/edit" element={<Edit />} />
-            <Route path="*" element={<Error />} /> */}
+            <Route path="/logs/:id/edit" element={<Edit />} />
+            {/* <Route path="*" element={<Error />} /> */}
           </Routes>
         </main>
       </Router>
