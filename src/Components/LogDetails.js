@@ -14,6 +14,7 @@ export default function LogDetails() {
         navigate("/not-found");
       });
   }, [id, navigate]);
+  console.log(log)
 
   const handleDelete = () => {
     fetch(`http://localhost:5555/logs/${id}`, { method: "DELETE" })

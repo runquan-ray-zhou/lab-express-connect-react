@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Pages
 import Edit from "./Pages/Edit";
-// import Error from "./Pages/Error";
+import Error from "./Pages/Error";
 import Home from "./Pages/Home";
 import Index from "./Pages/Index";
 import New from "./Pages/New";
@@ -24,7 +24,7 @@ function App() {
             <Route path="/logs/new" element={<New />} />
             <Route path="/logs/:id" element={<Show />} />
             <Route path="/logs/:id/edit" element={<Edit />} />
-            {/* <Route path="*" element={<Error />} /> */}
+            <Route path="*" element={<Error />} />
           </Routes>
         </main>
       </Router>
