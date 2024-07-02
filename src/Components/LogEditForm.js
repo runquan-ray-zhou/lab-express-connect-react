@@ -119,7 +119,7 @@ export default function LogEditForm() {
         <button type="submit">Submit</button>
       </form>
       <br />
-      <Link to={`http://localhost:5555/logs${id}`}>
+      <Link to={`/logs/${id}`}>
         <button>Nevermind!</button>
       </Link>
     </div>
