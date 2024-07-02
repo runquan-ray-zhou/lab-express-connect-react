@@ -5,7 +5,7 @@ export default function Log({ log, id }) {
     <tr>
     <Link to={`/logs/${id}`}>
       <td>
-        <p>{id}</p>
+        <p>{log.mistakesWereMadeToday ? "💥" : ""}</p>
       </td>
       <td>
          {log.captainName}
