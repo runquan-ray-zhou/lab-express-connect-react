@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import "./LogNewForm.css"
 
 export default function LogNewForm() {
   const navigate = useNavigate();
@@ -42,12 +43,13 @@ export default function LogNewForm() {
     addLog();
   };
 
-  console.log(log)
-
   return (
-    <div className="New">
+    <div className="newLog">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="captainName">Captain's Name:
+        <label htmlFor="captainName" >
+        <div className="newLog__label">
+          Captain's Name:
+        </div>  
         <br />
         <input
           id="captainName"
@@ -58,7 +60,10 @@ export default function LogNewForm() {
         />
         </label>
         <br />
-        <label htmlFor="title">Title
+        <label htmlFor="title">
+        <div className="newLog__label">
+          Title
+        </div> 
         <br />
         <input
           id="title"
@@ -69,7 +74,10 @@ export default function LogNewForm() {
         />
         </label>
         <br />
-        <label htmlFor="post">Post
+        <label htmlFor="post">
+        <div className="newLog__label">
+          Post
+        </div> 
         <br />
         <textarea
           id="post"
@@ -77,11 +85,16 @@ export default function LogNewForm() {
           onChange={handleTextChange}
           placeholder="What happened today?"
           required
+          rows="10" 
+          cols="50"
           >
         </textarea>
         </label>
         <br />
-        <label htmlFor="daysSinceLastCrisis">Days Since Last Crisis
+        <label htmlFor="daysSinceLastCrisis">
+        <div className="newLog__label">
+          Days Since Last Crisis
+        </div>  
         <br />
         <input
           id="daysSinceLastCrisis"
@@ -93,7 +106,10 @@ export default function LogNewForm() {
         />
         </label>
         <br />
-        <label htmlFor="mistakesWereMadeToday">Mistakes were made today:
+        <label htmlFor="mistakesWereMadeToday">
+        <div className="newLog__label">
+          Mistakes were made today:
+        </div> 
         <br />
         <input
           id="mistakesWereMadeToday"
@@ -103,11 +119,11 @@ export default function LogNewForm() {
         />
         </label>
         <br />
-        <button type="submit">Submit</button>
+        <button type="submit" className="newLog__button">Submit</button>
       </form>
       <br />
       <Link to={`/logs`}>
-        <button>Nevermind!</button>
+        <button className="newLog__button">Nevermind!</button>
       </Link>
     </div>
   );

@@ -1,0 +1,34 @@
+.newLog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 85vh;
+    margin: 0;
+    padding: 0;
+}
+.newLog__label {
+    margin-top: 10px;
+    font-size: 1.8em;
+    font-weight: 900;
+}
+.newLog__button {
+    width: 100%;
+    font-size: 2em;
+    margin-top: 20px;
+    padding: 10px 61px 10px 61px;
+    border: none;
+    background-color: #FFEE32;
+    cursor: pointer;
+    color: 202020;
+    border-radius: 5px;
+}
+
+#daysSinceLastCrisis {
+    width: 50px;
+}
+
+input {
+    padding: 5px;
+    width: 200px;
+}
