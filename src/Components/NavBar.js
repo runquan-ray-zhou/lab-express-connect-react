@@ -5,13 +5,16 @@ export default function NavBar() {
   return (
     <nav>
         <Link to="/">
-        <button>Home</button>
+          <button>Home</button>
         </Link>
         <Link to="/logs">
-        <button>Captain's Log</button>
+          <button>Captain's Log</button>
         </Link>
         <Link to="/logs/new">
-        <button>New Log</button>
+          <button>New Log</button>
+        </Link>
+        <Link to="/about">
+          <button>About</button>
         </Link>
     </nav>
   );

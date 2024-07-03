@@ -8,6 +8,7 @@ import Home from "./Pages/Home";
 import Index from "./Pages/Index";
 import New from "./Pages/New";
 import Show from "./Pages/Show";
+import About from "./Pages/About";
 
 // Components
 import NavBar from "./Components/NavBar";
@@ -23,6 +24,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/logs" element={<Index />} />
+            <Route path="/about" element={<About />} />
             <Route path="/logs/new" element={<New />} />
             <Route path="/logs/:id" element={<Show />} />
             <Route path="/logs/:id/edit" element={<Edit />} />
